@@ -9,9 +9,17 @@ The scripts in this directory can be used to perform a quadratic extrapolation o
 
 Software required to run the scripts: a Python installation with the following packages installed: `SciPy`, `NumPy`, `matplotlib`, `netCDF`.
 
-All data required to run the scripts is included in the directory data/
+### Data 
+
+Data required to run the scripts can be downloaded from the sources below, or is included in the directory data/
+
+MEaSUREs Gridded Sea Surface Height Anomalies: https://podaac.jpl.nasa.gov/dataset/SEA_SURFACE_HEIGHT_ALT_GRIDS_L4_2SATS_5DAY_6THDEG_V_JPL2205
+
+AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
 
 ### Steps
+1. Run Assemble_ssh_timeseries_file.py
+    - This script reads the individual MEaSUREs data files and writes to a single file after downsmapling spatially and averaging monthly
 1.	Run DefineRegions.py
     - This script contains the coordinates that define a five-point polygon containing the desired region
     - For a lower order polygon region, just repeat one or two of the coordinates
