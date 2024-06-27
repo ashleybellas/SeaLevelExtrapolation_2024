@@ -13,19 +13,18 @@ All data required to run the scripts is included in the directory data/
 
 ### Steps
 1.	Run DefineRegions.py
-
-  a.	This script contains the coordinates that define a five-point polygon containing the desired region
-  b.	For a lower order polygon region, just repeat one or two of the coordinates
-  c.	First coordinate must be the lower left corner and list coordinates counter-clockwise
-3.	Run IsolateRegionalTimeseries_ComputeRateAccel.py
-  a.	Calls a function IsolateTimeseries_5PointPolygonRegions to 
-    i.	Compute the regional timeseries by averaging the MEaSUREs data within defined regions
-    ii.	Save results to file 
+  1.	This script contains the coordinates that define a five-point polygon containing the desired region
+  1.	For a lower order polygon region, just repeat one or two of the coordinates
+  1.	First coordinate must be the lower left corner and list coordinates counter-clockwise
+1.	Run IsolateRegionalTimeseries_ComputeRateAccel.py
+  1.	Calls a function IsolateTimeseries_5PointPolygonRegions to 
+     1.	Compute the regional timeseries by averaging the MEaSUREs data within defined regions
+     1.	Save results to file 
   b.	Calls a function ComputeRateAccel_RegionalTimeseries to 
     i.	compute the rate, acceleration, annual, semi-annual, and formal errors of the regional timeseries, 
     ii.	save results to file
   c.	Plots the results 
-4.	Run ExtrapolateRegionalTimeseries_PlotwithAR6multiSSP.py
+1.	Run ExtrapolateRegionalTimeseries_PlotwithAR6multiSSP.py
   a.	Calls a function ConstructRateAccelEnsemble to 
     i.	Compute the regional error associated with GIA, serially correlated formal errors, and measurement errors
     ii.	construct an ensemble of pairs of rate and acceleration based on the errors
@@ -38,4 +37,3 @@ All data required to run the scripts is included in the directory data/
   e.	Calls a function SetExtrapolationReferenceYear to 
   i.	Reference all timeseries to a specified year, and
   f.	Plots the results
-
