@@ -23,17 +23,17 @@ All data required to run the scripts is included in the directory data/
     - Calls a function ComputeRateAccel_RegionalTimeseries to 
         - compute the rate, acceleration, annual, semi-annual, and formal errors of the regional timeseries, 
         -save results to file
-  c.	Plots the results 
+    - Plots the results 
 1.	Run ExtrapolateRegionalTimeseries_PlotwithAR6multiSSP.py
-  a.	Calls a function ConstructRateAccelEnsemble to 
-    i.	Compute the regional error associated with GIA, serially correlated formal errors, and measurement errors
-    ii.	construct an ensemble of pairs of rate and acceleration based on the errors
-    iii.	return the distribution of rates and accelerations
-  b.	Calls a function ComputeExtrapolations_Preferred_and_ConfidenceLimits to 
-    i.	extrapolate the preferred regional trajectory of sea level, and the confidence limits,
-  c.	Calls a function IsolateRegionalTimeseriesAR6_5PointPolygon to
-    i.	Compute the regional timeseries by averaging the AR6 medium confidence total sea level projections within defined regions
-  d.	Loads the regional AR6 timeseries data, 
-  e.	Calls a function SetExtrapolationReferenceYear to 
-  i.	Reference all timeseries to a specified year, and
-  f.	Plots the results
+    - Calls a function ConstructRateAccelEnsemble to 
+        - Compute the regional error associated with GIA, serially correlated formal errors, and measurement errors
+        - construct an ensemble of pairs of rate and acceleration based on the errors
+        - return the distribution of rates and accelerations
+    - Calls a function ComputeExtrapolations_Preferred_and_ConfidenceLimits to 
+        - extrapolate the preferred regional trajectory of sea level, and the confidence limits,
+    - Calls a function IsolateRegionalTimeseriesAR6_5PointPolygon to
+        - Compute the regional timeseries by averaging the AR6 medium confidence total sea level projections within defined regions
+    - Loads the regional AR6 timeseries data, 
+    - Calls a function SetExtrapolationReferenceYear to 
+    - Reference all timeseries to a specified year, and
+    - Plots the results
