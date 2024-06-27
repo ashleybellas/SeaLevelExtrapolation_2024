@@ -13,9 +13,9 @@ All data required to run the scripts is included in the directory data/
 
 ### Steps
 1.	Run DefineRegions.py
-    -This script contains the coordinates that define a five-point polygon containing the desired region
-    -For a lower order polygon region, just repeat one or two of the coordinates
-    -First coordinate must be the lower left corner and list coordinates counter-clockwise
+    - This script contains the coordinates that define a five-point polygon containing the desired region
+    - For a lower order polygon region, just repeat one or two of the coordinates
+    - First coordinate must be the lower left corner and list coordinates counter-clockwise
 1.	Run IsolateRegionalTimeseries_ComputeRateAccel.py
   1.	Calls a function IsolateTimeseries_5PointPolygonRegions to 
      1.	Compute the regional timeseries by averaging the MEaSUREs data within defined regions
