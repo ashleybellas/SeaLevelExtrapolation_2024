@@ -1,7 +1,9 @@
 # SeaLevelExtrapolation_2024
-This repository contains the codes and input data to reproduce the results from the following paper:
+This repository contains the codes used to perform the extrapolations in the following paper:
 
 A.S. Bellas-Manley, R.S. Nerem, & B.D. Hamlington: Extrapolation of the Satellite Altimeter Record to Understand Regional Variations in Future Sea Level Change, JGR:Oceans, submitted
+
+For CSEOF-corrected MEaSUREs data, reach out to me personally (ashley.bellas@colorado.edu) 
 
 ## User Manual 
 
@@ -20,6 +22,7 @@ AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
 ### Steps
 1. Run Assemble_ssh_timeseries_file.py
     - This script reads the individual MEaSUREs data files and writes to a single file after downsmapling spatially and averaging monthly
+    - You will need to update "fpath" to your local directory 
 1.	Run DefineRegions.py
     - This script contains the coordinates that define a five-point polygon containing the desired region
     - For a lower order polygon region, just repeat one or two of the coordinates
@@ -30,8 +33,8 @@ AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
         - Save results to file 
     - Calls a function ComputeRateAccel_RegionalTimeseries to 
         - compute the rate, acceleration, annual, semi-annual, and formal errors of the regional timeseries, 
-        -save results to file
-    - Plots the results 
+        -save results to file in data/
+    - Plots the results (you will need to create a plots/ sub-directory)
 1.	Run ExtrapolateRegionalTimeseries_PlotwithAR6multiSSP.py
     - Calls a function ConstructRateAccelEnsemble to 
         - Compute the regional error associated with GIA, serially correlated formal errors, and measurement errors
@@ -45,3 +48,4 @@ AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
     - Calls a function SetExtrapolationReferenceYear to 
     - Reference all timeseries to a specified year, and
     - Plots the results
+    - Note that you can change the variable "firstrun" to prevent re-computing the regional errors and regionally averaging the AR6 projections
