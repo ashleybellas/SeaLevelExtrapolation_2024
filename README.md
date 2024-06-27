@@ -17,12 +17,12 @@ All data required to run the scripts is included in the directory data/
     - For a lower order polygon region, just repeat one or two of the coordinates
     - First coordinate must be the lower left corner and list coordinates counter-clockwise
 1.	Run IsolateRegionalTimeseries_ComputeRateAccel.py
-  1.	Calls a function IsolateTimeseries_5PointPolygonRegions to 
-     1.	Compute the regional timeseries by averaging the MEaSUREs data within defined regions
-     1.	Save results to file 
-  b.	Calls a function ComputeRateAccel_RegionalTimeseries to 
-    i.	compute the rate, acceleration, annual, semi-annual, and formal errors of the regional timeseries, 
-    ii.	save results to file
+    - Calls a function IsolateTimeseries_5PointPolygonRegions to 
+        - Compute the regional timeseries by averaging the MEaSUREs data within defined regions
+        - Save results to file 
+    - Calls a function ComputeRateAccel_RegionalTimeseries to 
+        - compute the rate, acceleration, annual, semi-annual, and formal errors of the regional timeseries, 
+        -save results to file
   c.	Plots the results 
 1.	Run ExtrapolateRegionalTimeseries_PlotwithAR6multiSSP.py
   a.	Calls a function ConstructRateAccelEnsemble to 
