@@ -17,6 +17,8 @@ Data required to run the scripts can be downloaded from the sources below, or is
 
 MEaSUREs Gridded Sea Surface Height Anomalies: https://podaac.jpl.nasa.gov/dataset/SEA_SURFACE_HEIGHT_ALT_GRIDS_L4_2SATS_5DAY_6THDEG_V_JPL2205
 
+GIA uncertainties from Caron et al.: https://vesl.jpl.nasa.gov/solid-earth/gia/
+
 AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
 
 ### Steps
@@ -49,3 +51,4 @@ AR6 medium confidence sea level projections: https://zenodo.org/records/6382554
     - Reference all timeseries to a specified year, and
     - Plots the results
     - Note that you can change the variable "firstrun" to prevent re-computing the regional errors and regionally averaging the AR6 projections
+    - You will need to put the AR6 data in a subdirectory data/AR6/
