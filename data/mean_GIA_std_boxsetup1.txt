@@ -1,8 +1,0 @@
-The average std of the GIA correction, in terms of mm/year EWH :
-Indian Ocean	3.767E-02
-North Pacific	6.114E-02
-Tropical Pacific	4.327E-02
-South Pacific	3.371E-02
-North Atlantic	9.002E-02
-South Atlantic	3.664E-02
-Antarctic Circumpolar	5.457E-02
